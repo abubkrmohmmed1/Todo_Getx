@@ -1,2 +1,2 @@
 # Todo_Getx
-#Todo Getx
+## Simple Todo App using Getx state manegment 
