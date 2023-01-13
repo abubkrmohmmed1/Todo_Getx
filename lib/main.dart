@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_getx/app/data/services/services.dart';
+import 'package:todo_getx/app/modules/home/home_binding.dart';
 import 'app/modules/home/home_view.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 
 void main() async{
@@ -17,9 +19,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       title: 'My List',
-      home: HomePage(),
+      home: const HomePage(),
+      initialBinding: HomeBinding(),
+      builder: EasyLoading.init(),
     );
   }
 }
