@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'My List',
+      debugShowCheckedModeBanner: false,
       home: const HomePage(),
       initialBinding: HomeBinding(),
       builder: EasyLoading.init(),
